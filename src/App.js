@@ -7,6 +7,8 @@ import Skills from "./Pages/Skills";
 import Project from "./Pages/Projects";
 import Education from "./Pages/Education";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
         <Route path="/projects" element={<Project />} />
         <Route path="/experience" element={<Experience />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
