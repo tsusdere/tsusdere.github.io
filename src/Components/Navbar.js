@@ -1,45 +1,67 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import * as React from "react";
+import Typography from "@mui/material/Typography";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
+import Link from "@mui/material/Link";
+import HomeIcon from "@mui/icons-material/Home";
+import LaptopChromebookIcon from "@mui/icons-material/LaptopChromebook";
+import WorkIcon from "@mui/icons-material/Work";
+import SchoolIcon from "@mui/icons-material/School";
+import AccountTreeIcon from "@mui/icons-material/AccountTree";
 
 function Navbar() {
-  const path = useLocation().pathname;
-
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-dark"
-      style={{ backgroundColor: "#252525" }}
-    >
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
-          <Link to="/" className="nav-item nav-link">
-            Home
-          </Link>
-          <Link to="/experience" className="nav-item nav-link">
-            Experience
-          </Link>
-          <Link to="/skills" className="nav-item nav-link">
-            Skills
-          </Link>
-          <Link to="/education" className="nav-item nav-link">
-            Education
-          </Link>
-          <Link to="/projects" className="nav-item nav-link">
-            Projects
-          </Link>
-        </div>
-      </div>
-    </nav>
+    <div role="presentation">
+      <Breadcrumbs aria-label="breadcrumb" color="white">
+        <Link
+          underline="hover"
+          sx={{ display: "flex", alignItems: "center" }}
+          color="inherit"
+          href="/"
+        >
+          <HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+          Home
+        </Link>
+        <Link
+          underline="hover"
+          sx={{ display: "flex", alignItems: "center" }}
+          color="inherit"
+          href="/experience"
+        >
+          <WorkIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+          Experience
+        </Link>
+
+        <Link
+          underline="hover"
+          sx={{ display: "flex", alignItems: "center" }}
+          color="inherit"
+          href="/skills"
+        >
+          <LaptopChromebookIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+          Skills
+        </Link>
+
+        <Link
+          underline="hover"
+          sx={{ display: "flex", alignItems: "center" }}
+          color="inherit"
+          href="/education"
+        >
+          <SchoolIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+          Education
+        </Link>
+
+        <Link
+          underline="hover"
+          sx={{ display: "flex", alignItems: "center" }}
+          color="inherit"
+          href="/projects"
+        >
+          <AccountTreeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+          Projects
+        </Link>
+      </Breadcrumbs>
+    </div>
   );
 }
 

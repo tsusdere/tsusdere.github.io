@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 
 function Footer() {
-  const [hover, setHover] = useState("grey");
-  const [linkedin, setLinkedIn] = useState("grey");
+  const [hover, setHover] = useState("white");
+  const [linkedin, setLinkedIn] = useState("dodgerblue");
 
   const handleLinkedIn = () => {
-    setLinkedIn("white");
+    setLinkedIn("black");
   };
 
   const handleLinkedInLeave = () => {
-    setLinkedIn("grey");
+    setLinkedIn("dodgerblue");
   };
   const handleMouseEnter = () => {
-    setHover("white");
+    setHover("black");
   };
 
   const handleMouseLeave = () => {
-    setHover("grey");
+    setHover("white");
   };
   return (
     <div className="footer">
