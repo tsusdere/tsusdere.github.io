@@ -5,7 +5,10 @@ function Navbar() {
   const path = useLocation().pathname;
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      className="navbar navbar-expand-lg navbar-dark"
+      style={{ backgroundColor: "#252525" }}
+    >
       <button
         className="navbar-toggler"
         type="button"
