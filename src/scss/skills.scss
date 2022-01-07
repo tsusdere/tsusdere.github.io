@@ -1,0 +1,40 @@
+.skills {
+  width: 100%;
+  height: 50%;
+  margin-top: 30px;
+}
+.web {
+  width: 20%;
+  float: left;
+  height: 100%;
+  margin-left: 50px;
+  overflow: hidden;
+  text-align: center;
+  border: 2px dotted rgb(0, 0, 0);
+  background-color: rgb(170, 178, 214);
+  filter: drop-shadow(10px 10px 5px #b4b4da);
+}
+
+.data {
+  width: 20%;
+  float: center;
+  height: 100%;
+  margin-left: 500px;
+  overflow: hidden;
+  text-align: center;
+  border: 2px dotted rgb(0, 0, 0);
+  background-color: rgb(198, 170, 214);
+  filter: drop-shadow(10px 10px 5px #dab4d7);
+}
+
+.general {
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  margin-left: 55%;
+  margin-top: -41.4%;
+  border: 2px dotted rgb(0, 0, 0);
+  background-color: rgb(179, 209, 173);
+  filter: drop-shadow(10px 10px 5px #b7dab4);
+}

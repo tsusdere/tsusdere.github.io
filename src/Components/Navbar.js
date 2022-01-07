@@ -1,5 +1,4 @@
 import * as React from "react";
-import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import HomeIcon from "@mui/icons-material/Home";
@@ -11,7 +10,7 @@ import AccountTreeIcon from "@mui/icons-material/AccountTree";
 function Navbar() {
   return (
     <div role="presentation">
-      <Breadcrumbs aria-label="breadcrumb" color="white">
+      <Breadcrumbs aria-label="breadcrumb" color="grey">
         <Link
           underline="hover"
           sx={{ display: "flex", alignItems: "center" }}
