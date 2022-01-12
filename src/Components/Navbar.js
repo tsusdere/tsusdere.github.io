@@ -6,6 +6,7 @@ import LaptopChromebookIcon from "@mui/icons-material/LaptopChromebook";
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
+import NoteAddIcon from "@mui/icons-material/NoteAdd";
 
 function Navbar() {
   return (
@@ -58,6 +59,15 @@ function Navbar() {
         >
           <AccountTreeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
           Projects
+        </Link>
+        <Link
+          underline="hover"
+          sx={{ display: "flex", alignItems: "center" }}
+          color="inherit"
+          href="/resume"
+        >
+          <NoteAddIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+          Resume
         </Link>
       </Breadcrumbs>
     </div>

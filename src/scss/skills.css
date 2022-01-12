@@ -8,7 +8,7 @@
   width: 20%;
   float: left;
   height: 100%;
-  margin-left: 50px;
+  margin-left: 200px;
   overflow: hidden;
   text-align: center;
   border: 2px dotted black;
@@ -21,7 +21,7 @@
   width: 20%;
   float: center;
   height: 100%;
-  margin-left: 500px;
+  margin-left: 700px;
   overflow: hidden;
   text-align: center;
   border: 2px dotted black;
@@ -35,8 +35,8 @@
   height: 100%;
   overflow: hidden;
   text-align: center;
-  margin-left: 55%;
-  margin-top: -41.4%;
+  margin-left: 65%;
+  margin-top: -37%;
   border: 2px dotted black;
   background-color: #b3d1ad;
   -webkit-filter: drop-shadow(10px 10px 5px #b7dab4);

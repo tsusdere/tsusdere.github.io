@@ -2,6 +2,8 @@ import { Typography } from "@mui/material";
 import React from "react";
 import DataSkills from "../Components/DataSkills";
 import WebSkills from "../Components/WebSkills";
+import GenSkills from "../Components/GenSkills";
+
 function Skills() {
   return (
     <div className="skills">
@@ -20,7 +22,7 @@ function Skills() {
       <div className="general">
         <Typography variant="h4">General</Typography>
         <div className="webSkils">
-          <DataSkills />
+          <GenSkills />
         </div>
       </div>
     </div>
