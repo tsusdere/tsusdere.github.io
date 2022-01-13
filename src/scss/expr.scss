@@ -1,0 +1,36 @@
+.expr {
+  border: 2px solid rgba(245, 212, 255, 0.562);
+  color: rgba(0, 0, 0, 0.63);
+  background-color: rgb(244, 249, 255);
+  height: 100vh;
+  background-image: url("../../public/w.jpg");
+  background-size: auto;
+
+  .intel {
+    background-color: rgb(147, 174, 187);
+    border: 2px solid rgba(13, 158, 255, 0.438);
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 10%;
+    color: white;
+    font-family: "Roboto";
+  }
+  .fccu {
+    background-color: rgb(187, 147, 147);
+    border: 2px solid rgba(255, 13, 13, 0.438);
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 1%;
+    color: rgb(75, 45, 45);
+    font-family: "Roboto";
+  }
+  .utsa {
+    background-color: rgb(187, 176, 147);
+    border: 2px solid rgba(255, 150, 13, 0.438);
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 1%;
+    color: rgb(75, 45, 45);
+    font-family: "Roboto";
+  }
+}

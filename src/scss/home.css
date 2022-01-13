@@ -14,6 +14,8 @@
   margin-left: 26%;
   margin-top: 5%;
   font-family: "Roboto";
+  -webkit-filter: drop-shadow(10px 10px 4px #49494975);
+          filter: drop-shadow(10px 10px 4px #49494975);
 }
 
 .homepage a {
