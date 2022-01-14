@@ -42,7 +42,7 @@ function Home() {
             Texas at San Antonio.
           </h4>
           <h4>
-            > You can learn more about my studies <a href="/education">here!</a>
+            > <a href="/education">cd studies</a>
           </h4>
           <br />
           <h4>
@@ -50,7 +50,7 @@ function Home() {
             cool projects. Previously, I was a Data Analyst and a CS Tutor.
           </h4>
           <h4>
-            > You can find my experience <a href="/education">here!</a>
+            > <a href="/education">cd work_experience</a>
           </h4>
           <br />
           <h4>
@@ -60,7 +60,7 @@ function Home() {
             framework of choice.
           </h4>
           <h4>
-            > My specific skills can be found <a href="/skills">here!</a>
+            ><a href="/skills">cd skills</a>
           </h4>
         </Typing>
         <Blink color="white" text=">_" fontSize="25px" />

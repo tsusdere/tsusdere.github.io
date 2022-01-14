@@ -7,69 +7,48 @@ import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import NoteAddIcon from "@mui/icons-material/NoteAdd";
+import BottomNavigation from "@mui/material/BottomNavigation";
+import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
+import MuiBottomNavigationAction from "@mui/material/BottomNavigationAction";
+import { styled } from "@mui/material/styles";
 
 function Navbar() {
+  const [value, setValue] = React.useState(window.location.pathname);
+
+  const BottomNavigationAction = styled(MuiBottomNavigationAction)(`
+  color: white;
+  &.Mui-selected {
+    color: rgb(255, 24, 197);
+  }
+  
+`);
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+    console.log(window.location.href);
+  };
   return (
     <div role="presentation">
-      <Breadcrumbs aria-label="breadcrumb" color="grey">
-        <Link
-          underline="hover"
-          sx={{ display: "flex", alignItems: "center" }}
-          color="inherit"
-          href="/"
-        >
-          <HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          Home
-        </Link>
-        <Link
-          underline="hover"
-          sx={{ display: "flex", alignItems: "center" }}
-          color="inherit"
+      <BottomNavigation
+        sx={{
+          position: "fixed",
+          width: "100%",
+          backgroundColor: "transparent",
+        }}
+        value={value}
+        onChange={handleChange}
+        showLabels
+      >
+        <BottomNavigationAction href="/" value="/" icon={<HomeIcon />} />
+        <BottomNavigationAction
           href="/experience"
-        >
-          <WorkIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          Experience
-        </Link>
-
-        <Link
-          underline="hover"
-          sx={{ display: "flex", alignItems: "center" }}
-          color="inherit"
-          href="/skills"
-        >
-          <LaptopChromebookIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          Skills
-        </Link>
-
-        <Link
-          underline="hover"
-          sx={{ display: "flex", alignItems: "center" }}
-          color="inherit"
-          href="/education"
-        >
-          <SchoolIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          Education
-        </Link>
-
-        <Link
-          underline="hover"
-          sx={{ display: "flex", alignItems: "center" }}
-          color="inherit"
-          href="/projects"
-        >
-          <AccountTreeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          Projects
-        </Link>
-        <Link
-          underline="hover"
-          sx={{ display: "flex", alignItems: "center" }}
-          color="inherit"
-          href="/resume"
-        >
-          <NoteAddIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          Resume
-        </Link>
-      </Breadcrumbs>
+          value="/experience"
+          icon={<WorkIcon />}
+        />
+        <BottomNavigationAction color="white" icon={<SchoolIcon />} />
+        <BottomNavigationAction icon={<LaptopChromebookIcon />} />
+        <BottomNavigationAction icon={<EmojiEmotionsIcon />} />
+      </BottomNavigation>
     </div>
   );
 }

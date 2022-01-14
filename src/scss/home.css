@@ -1,10 +1,8 @@
 .homepage {
-  border: 2px solid rgba(245, 212, 255, 0.562);
+  border: 2px solid rgba(75, 75, 75, 0.562);
   color: rgba(0, 0, 0, 0.63);
-  background-color: #f4f9ff;
+  background-color: rgba(17, 17, 17, 0.897);
   height: 100vh;
-  background-image: url("../../public/bg.jpg");
-  background-size: auto;
 }
 
 .homepage .about {
@@ -19,7 +17,7 @@
 }
 
 .homepage a {
-  color: green;
+  color: #ff18c5;
   background-color: transparent;
   text-decoration: none;
 }
