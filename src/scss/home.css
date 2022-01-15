@@ -28,4 +28,23 @@
   padding-left: 10px;
   font-family: "Consolas";
 }
+
+.homepage .work {
+  font-family: "Roboto";
+  color: azure;
+  text-align: left;
+  margin-top: 50px;
+  width: 400px;
+  margin-left: 30%;
+}
+
+.homepage .education {
+  font-family: "Roboto";
+  color: azure;
+  text-align: left;
+  margin-top: 25px;
+  width: 450px;
+  margin-left: 30%;
+  background-color: transparent;
+}
 /*# sourceMappingURL=home.css.map */
