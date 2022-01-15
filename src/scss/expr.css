@@ -1,39 +1,31 @@
 .expr {
   border: 2px solid rgba(245, 212, 255, 0.562);
   color: rgba(0, 0, 0, 0.63);
-  background-color: #f4f9ff;
+  background-color: rgba(17, 17, 17, 0.897);
   height: 100vh;
-  background-image: url("../../public/w.jpg");
-  background-size: auto;
 }
 
 .expr .intel {
-  background-color: #93aebb;
-  border: 2px solid rgba(13, 158, 255, 0.438);
   width: 40%;
   margin-left: 30%;
-  margin-top: 10%;
-  color: white;
+  margin-top: 150px;
+  color: dodgerBlue;
   font-family: "Roboto";
 }
 
 .expr .fccu {
-  background-color: #bb9393;
-  border: 2px solid rgba(255, 13, 13, 0.438);
   width: 40%;
   margin-left: 30%;
-  margin-top: 1%;
-  color: #4b2d2d;
+  margin-top: 50px;
+  color: red;
   font-family: "Roboto";
 }
 
 .expr .utsa {
-  background-color: #bbb093;
-  border: 2px solid rgba(255, 150, 13, 0.438);
   width: 40%;
   margin-left: 30%;
-  margin-top: 1%;
-  color: #4b2d2d;
+  margin-top: 50px;
+  color: orange;
   font-family: "Roboto";
 }
 /*# sourceMappingURL=expr.css.map */
