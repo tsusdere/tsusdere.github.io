@@ -40,7 +40,11 @@ function Navbar() {
         showLabels
       >
         <BottomNavigationAction href="/" value="/" icon={<HomeIcon />} />
-        <BottomNavigationAction icon={<LaptopChromebookIcon />} />
+        <BottomNavigationAction
+          href="/projects"
+          value="/projects"
+          icon={<LaptopChromebookIcon />}
+        />
         <BottomNavigationAction icon={<EmojiEmotionsIcon />} />
       </BottomNavigation>
     </div>
