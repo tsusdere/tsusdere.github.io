@@ -16,6 +16,7 @@ function ProjectCard(props) {
         color: "white",
         overflow: "auto",
         marginTop: props.top,
+        position: "absolute",
       }}
     >
       <CardMedia component="img" height="140" image={props.img} />

@@ -1,19 +1,20 @@
 .homepage {
-  border: 2px solid rgba(75, 75, 75, 0.562);
   color: rgba(0, 0, 0, 0.63);
-  background-color: rgba(17, 17, 17, 0.897);
+  padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.897);
   height: 100vh;
+  overflow-y: hidden;
 }
 
 .homepage .about {
   background-color: black;
   color: white;
-  width: 50%;
+  max-width: 50%;
   margin-left: 26%;
   margin-top: 5%;
   font-family: "Roboto";
-  -webkit-filter: drop-shadow(10px 10px 4px #49494975);
-          filter: drop-shadow(10px 10px 4px #49494975);
+  -webkit-filter: drop-shadow(-5px 10px 4px #f51616c0);
+          filter: drop-shadow(-5px 10px 4px #f51616c0);
 }
 
 .homepage a {
@@ -46,5 +47,13 @@
   width: 450px;
   margin-left: 30%;
   background-color: transparent;
+}
+
+.homepage .bio {
+  background-color: white;
+  text-align: left;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 50px;
 }
 /*# sourceMappingURL=home.css.map */

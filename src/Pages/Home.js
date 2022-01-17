@@ -2,10 +2,28 @@ import React from "react";
 import "../scss/home.css";
 import Blink from "react-blink-text";
 import Typing from "react-typing-animation";
+import { Typography } from "@mui/material";
+import { motion } from "framer-motion";
+
+const transition = { duration: 5, ease: [0.43, 0.13, 0.23, 0.96] };
 
 function Home() {
   return (
-    <div className="homepage">
+    <motion.div
+      exit={{ opacity: 0 }}
+      transition={transition}
+      className="homepage"
+    >
+      <img
+        src="/icon.png"
+        style={{
+          width: 350,
+          height: "auto",
+          float: "left",
+          position: "absolute",
+          bottom: 104,
+        }}
+      />
       <div className="about">
         <div className="terminal">
           <img
@@ -59,48 +77,27 @@ function Home() {
         </Typing>
         <Blink color="white" text=">_" fontSize="25px" />
       </div>
-      <div className="work">
-        <h4>
-          <b>
-            <u>Work</u>
-          </b>
-        </h4>
-
-        <p>
-          <b>Aug. 2021 - Current</b>
-          &emsp;&emsp;Intel Corporation
-        </p>
-
-        <p>
-          <b>May 2021 - Aug. 2021</b>
-          &nbsp;&nbsp;&nbsp;&nbsp;First Community Credit Union
-        </p>
-
-        <p>
-          <b>Sep. 2018 - May. 2021</b>
-          &nbsp;&nbsp;&nbsp;&nbsp; University of Texas
-        </p>
+      <div className="bio">
+        <Typography variant="h6">
+          <b>Who am I?</b>
+        </Typography>
+        <Typography variant="subtitle1">
+          I enjoy to watch anime, read manga, workout, PC gaming, or just work
+          on side projects when I'm not working/studying.
+        </Typography>
+        <Typography variant="h6">
+          <b>What am I?</b>
+        </Typography>
+        <Typography variant="subtitle1">
+          I am a SWE and graduate student with extensive knowledge in big data.
+          More specifically data wrangling, ETL, pipelining, and visualization.
+          My main focus area is Machine Learning and Deep Learning solutions and
+          technologies. Heavily proficient with Python and it's data science
+          libraries. As well as NoSQL and SQL database design, model, storage
+          systems, applications, indexing, and hashing.
+        </Typography>
       </div>
-
-      <div className="education">
-        <h5>
-          <u>
-            <b>Education</b>
-          </u>
-        </h5>
-
-        <p>
-          <b>Currently</b>
-          &nbsp;&emsp; MS CS @ University of Texas at Austin
-        </p>
-
-        <p>
-          <b>2021</b>
-          &nbsp; &nbsp; &emsp;&emsp; BS CS from University of Texas at San
-          Antonio
-        </p>
-      </div>
-    </div>
+    </motion.div>
   );
 }
 

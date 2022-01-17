@@ -1,52 +1,49 @@
 import * as React from "react";
+import "../scss/navbar.css";
+import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
-import HomeIcon from "@mui/icons-material/Home";
-import LaptopChromebookIcon from "@mui/icons-material/LaptopChromebook";
-import WorkIcon from "@mui/icons-material/Work";
-import SchoolIcon from "@mui/icons-material/School";
-import AccountTreeIcon from "@mui/icons-material/AccountTree";
-import NoteAddIcon from "@mui/icons-material/NoteAdd";
-import BottomNavigation from "@mui/material/BottomNavigation";
-import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
-import MuiBottomNavigationAction from "@mui/material/BottomNavigationAction";
-import { styled } from "@mui/material/styles";
+
+function handleClick(event) {
+  event.preventDefault();
+  console.info("You clicked a breadcrumb.");
+}
 
 function Navbar() {
-  const [value, setValue] = React.useState(window.location.pathname);
-
-  const BottomNavigationAction = styled(MuiBottomNavigationAction)(`
-  color: white;
-  &.Mui-selected {
-    color: rgb(255, 24, 197);
-  }
-  
-`);
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-    console.log(window.location.href);
-  };
   return (
-    <div role="presentation">
-      <BottomNavigation
-        sx={{
-          position: "fixed",
-          width: "100%",
-          backgroundColor: "transparent",
-        }}
-        value={value}
-        onChange={handleChange}
-        showLabels
-      >
-        <BottomNavigationAction href="/" value="/" icon={<HomeIcon />} />
-        <BottomNavigationAction
-          href="/projects"
-          value="/projects"
-          icon={<LaptopChromebookIcon />}
-        />
-        <BottomNavigationAction icon={<EmojiEmotionsIcon />} />
-      </BottomNavigation>
+    <div className="navbar">
+      <div className="name">
+        <Typography color="text.primary" variant="h5">
+          <b>Fabian Aguilar Gomez</b>
+          &ensp; <span style={{ fontSize: 20 }}>/ Software Engineer</span>
+        </Typography>
+      </div>
+      <div className="links">
+        <div role="presentation">
+          <Breadcrumbs aria-label="breadcrumb">
+            <Link underline="hover" color="inherit" href="/">
+              about me
+            </Link>
+            <Link underline="hover" color="inherit" href="/resume">
+              resume
+            </Link>
+            <Link
+              underline="hover"
+              color="inherit"
+              href="/getting-started/installation/"
+            >
+              projects
+            </Link>
+            <Link
+              underline="hover"
+              color="inherit"
+              href="/getting-started/installation/"
+            >
+              contact
+            </Link>
+          </Breadcrumbs>
+        </div>
+      </div>
     </div>
   );
 }
