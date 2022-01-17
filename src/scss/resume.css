@@ -1,12 +1,51 @@
+.workContainer {
+  margin-top: 5%;
+  padding-top: 20px;
+  background-color: white;
+}
+
 .work {
-  background-color: red;
-  margin-top: 3.5%;
+  background-color: white;
   width: 40%;
   margin-left: 28%;
   overflow: auto;
 }
 
 .intel {
-  background-color: rosybrown;
+  background-color: white;
+}
+
+.first {
+  background-color: white;
+  margin-top: 30px;
+}
+
+.utsa {
+  background-color: white;
+  margin-top: 30px;
+}
+
+.education {
+  background-color: white;
+  width: 40%;
+  margin-left: 28%;
+  margin-top: 2%;
+  margin-bottom: 7%;
+}
+
+.tech {
+  background-color: palegreen;
+  text-align: center;
+  width: 40%;
+  margin-left: 28%;
+}
+
+.datascience {
+  background-color: #c70a0a;
+  text-align: left;
+}
+
+.skills {
+  background-color: red;
 }
 /*# sourceMappingURL=resume.css.map */

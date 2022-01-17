@@ -1,11 +1,49 @@
+.workContainer {
+  margin-top: 5%;
+  padding-top: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
 .work {
-  background-color: red;
-  margin-top: 3.5%;
+  background-color: rgb(255, 255, 255);
   width: 40%;
   margin-left: 28%;
   overflow: auto;
 }
 
 .intel {
-  background-color: rosybrown;
+  background-color: rgb(255, 255, 255);
+}
+
+.first {
+  background-color: rgb(255, 255, 255);
+  margin-top: 30px;
+}
+
+.utsa {
+  background-color: rgb(255, 255, 255);
+  margin-top: 30px;
+}
+
+.education {
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  margin-left: 28%;
+  margin-top: 2%;
+  margin-bottom: 7%;
+}
+
+.tech {
+  background-color: palegreen;
+  text-align: center;
+  width: 40%;
+  margin-left: 28%;
+}
+
+.datascience {
+  background-color: rgb(199, 10, 10);
+  text-align: left;
+}
+.skills {
+  background-color: red;
 }
