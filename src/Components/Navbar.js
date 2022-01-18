@@ -34,11 +34,7 @@ function Navbar() {
             >
               projects
             </Link>
-            <Link
-              underline="hover"
-              color="inherit"
-              href="/getting-started/installation/"
-            >
+            <Link underline="hover" color="inherit" href="/contact">
               contact
             </Link>
           </Breadcrumbs>

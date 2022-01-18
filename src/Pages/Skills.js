@@ -7,24 +7,7 @@ import GenSkills from "../Components/GenSkills";
 function Skills() {
   return (
     <div className="skills">
-      <div className="web">
-        <Typography variant="h4">Web Development</Typography>
-        <div className="webSkills">
-          <WebSkills />
-        </div>
-      </div>
-      <div className="data">
-        <Typography variant="h4">Data Science</Typography>
-        <div className="webSkils">
-          <DataSkills />
-        </div>
-      </div>
-      <div className="general">
-        <Typography variant="h4">General</Typography>
-        <div className="webSkils">
-          <GenSkills />
-        </div>
-      </div>
+      <h1>Test</h1>
     </div>
   );
 }

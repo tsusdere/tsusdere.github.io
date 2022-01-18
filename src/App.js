@@ -9,6 +9,7 @@ import Resume from "./Pages/Resume";
 import Education from "./Pages/Education";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import Map from "./Pages/Map";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -18,11 +19,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/skills" element={<Skills />} />
         <Route path="/education" element={<Education />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Map />} />
       </Routes>
       <Footer />
     </Router>
