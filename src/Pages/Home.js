@@ -90,11 +90,15 @@ function Home() {
         </Typography>
         <Typography variant="subtitle1">
           I am a SWE and graduate student with extensive knowledge in big data.
-          More specifically data wrangling, ETL, pipelining, and visualization.
+          More specifically data wrangling, databases,
+	  	  ETL, pipelining, and visualization.
           My main focus area is Machine Learning and Deep Learning solutions and
           technologies. Heavily proficient with Python and it's data science
-          libraries. As well as NoSQL and SQL database design, model, storage
+          libraries. As well as NoSQL(MongoDB) and 
+	  	  SQL(MySQL, MariaDB, Postgres, SQL Server) database design, model, storage
           systems, applications, indexing, and hashing.
+	  	  <br/>
+	  	  You can reach me at: faadnd[at]utexas.edu
         </Typography>
       </div>
     </motion.div>

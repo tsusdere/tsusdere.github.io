@@ -14,6 +14,13 @@ function Resume() {
             style={{ textAlign: "center", color: "grey" }}
           >
             <b>Work Experience</b>
+	  		<br/>
+	  		<h6>
+	  		You can find my full resume  
+	  		&nbsp;<a href="FabianAguilarGomez-Resume.pdf" download= "FabianAguilarGomez-Resume.pdf">
+	  		here.
+	  		</a>
+	  		</h6>
           </Typography>
           <div className="intel">
             <img
@@ -138,10 +145,10 @@ function Resume() {
           <img
             src="utsa.jpg"
             style={{
-              width: 112,
+              width: 105,
               heigh: "auto",
               float: "left",
-              paddingRight: 5,
+              paddingRight: 6,
             }}
           />
           <Typography variant="h4" color="text.primary">
@@ -157,7 +164,6 @@ function Resume() {
           <Typography
             variant="caption"
             color="text.primary"
-            style={{ textAlign: "center", paddingLeft: 100 }}
           >
             Aug. 2021 - May 2021
           </Typography>
